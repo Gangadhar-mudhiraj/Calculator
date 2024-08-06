@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="calci">
+        <h1 class="title">Calculator</h1>
+        <h1 class="ans" id="result">Result: 0</h1>
+        <table>
+            <tr>
+                <td> <button class="ele" onclick="clearResult()">AC</button></td>
+                <td> <button class="ele" onclick="appendCharacter('(')">(</button></td>
+                <td> <button class="ele" onclick="appendCharacter(')')">)</button></td>
+                <td> <button class="ele" onclick="appendCharacter('/')">/</button></td>
+            </tr>
+            <tr>
+                <td> <button class="ele" onclick="appendCharacter('7')">7</button></td>
+                <td> <button class="ele" onclick="appendCharacter('8')">8</button></td>
+                <td> <button class="ele" onclick="appendCharacter('9')">9</button></td>
+                <td> <button class="ele" onclick="appendCharacter('*')">X</button></td>
+            </tr>
+            <tr>
+                <td> <button class="ele" onclick="appendCharacter('4')">4</button></td>
+                <td> <button class="ele" onclick="appendCharacter('5')">5</button></td>
+                <td> <button class="ele" onclick="appendCharacter('6')">6</button></td>
+                <td> <button class="ele" onclick="appendCharacter('-')">-</button></td>
+            </tr>
+            <tr>
+                <td> <button class="ele" onclick="appendCharacter('1')">1</button></td>
+                <td> <button class="ele" onclick="appendCharacter('2')">2</button></td>
+                <td> <button class="ele" onclick="appendCharacter('3')">3</button></td>
+                <td> <button class="ele" onclick="appendCharacter('+')">+</button></td>
+            </tr>
+            <tr>
+                <td> <button class="ele" onclick="appendCharacter('0')" id="zero">0</button></td>
+                <td> <button class="ele" onclick="appendCharacter('.')">.</button></td>
+                <td> <button class="ele" onclick="appendCharacter('%')">%</button></td>
+                <td> <button class="ele" onclick="calculateResult()">=</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
